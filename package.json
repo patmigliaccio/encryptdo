@@ -1,11 +1,11 @@
 {
   "name": "encryptdo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "an encrypting application",
   "main": "app.js",
   "scripts": {
     "start": "node ./dist/build/app.js",
-    "build": "gulp --require ts-node/register build"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "typescript": "^2.0.10"
   },
   "dependencies": {
+    "@types/es6-promise": "0.0.32",
     "@types/node": "0.0.2"
   }
 }

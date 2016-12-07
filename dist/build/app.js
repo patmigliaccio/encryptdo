@@ -1,14 +1,10 @@
 "use strict";
-var fs = require('fs');
-var crypto = require('crypto');
+var hash_1 = require('./hash');
 var file = 'data/randomStrings.txt';
-var hash = crypto.createHash('sha256');
-hash.setEncoding('hex');
-var reader = fs.createReadStream(file);
-reader.on('end', function () {
-    hash.end();
-    console.log(hash.read());
+var slash = new hash_1.default('sha256');
+slash.read(file)
+    .then(function (res) {
+    console.log(res);
 });
-reader.pipe(hash);
 
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=app.js.map

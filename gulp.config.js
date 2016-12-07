@@ -7,15 +7,15 @@ var CONFIG = {
         dest: 'dist/definitions'
     },
     js: {
-        dest: 'dist/js',
+        dest: 'dist/build',
         maps: 'maps'
     },
-    build: {
-        src: 'dist/js/**/*.js',
+/*    build: {
+        src: 'dist/js/!**!/!*.js',
         dest: 'dist/build',
         maps: 'maps',
         outFile: 'app.js'
-    }
+    }*/
 };
 
 module.exports = CONFIG;

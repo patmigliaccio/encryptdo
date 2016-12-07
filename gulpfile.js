@@ -19,7 +19,7 @@ gulp.task('build-ts', function() {
         ]);
 });
 
-gulp.task('bundle', function(){
+/*gulp.task('bundle', function(){
     return gulp.src(CONFIG.build.src)
         .pipe(plugins.sourcemaps.init())
         .pipe(plugins.concat(CONFIG.build.outFile))
@@ -28,12 +28,12 @@ gulp.task('bundle', function(){
         .pipe(plugins.rename({ extname: '.min.js' }))
         .pipe(plugins.sourcemaps.write(CONFIG.build.maps))
         .pipe(gulp.dest(CONFIG.build.dest))
-});
+});*/
 
 gulp.task('watch', function(){
-    gulp.watch(CONFIG.ts.src, ['build']);
+    gulp.watch(CONFIG.ts.src, ['build-ts']);
 });
 
 gulp.task('build', function(done) {
-    runSequence('build-ts', 'bundle', done);
+    runSequence('build-ts', done);
 });
