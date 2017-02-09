@@ -4,18 +4,12 @@ var CONFIG = {
         src: 'src/**/*.ts'
     },
     dts: {
-        dest: 'dist/definitions'
+        dest: 'build/definitions'
     },
     js: {
-        dest: 'dist/build',
+        dest: 'build',
         maps: 'maps'
-    },
-/*    build: {
-        src: 'dist/js/!**!/!*.js',
-        dest: 'dist/build',
-        maps: 'maps',
-        outFile: 'app.js'
-    }*/
+    }
 };
 
 module.exports = CONFIG;

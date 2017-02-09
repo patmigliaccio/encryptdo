@@ -1,18 +1,16 @@
 {
   "name": "encryptdo",
   "version": "0.0.2",
-  "description": "an encrypting application",
-  "main": "app.js",
-  "scripts": {
-    "start": "node ./dist/build/app.js",
-    "build": "gulp build"
+  "description": "a set of encryption classes for node + typescript",
+  "license": "MIT",
+  "author": {
+    "name": "Pat Migliaccio",
+    "email": "pat@patmigliaccio.com"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/pmigliaccio/encryptdo.git"
   },
-  "author": "Pat Migliaccio <pmigliaccio>",
-  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
