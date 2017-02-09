@@ -1,7 +1,7 @@
 {
-  "name": "encryptdo",
+  "name": "type-crypt",
   "version": "0.0.2",
-  "description": "a set of encryption classes for node + typescript",
+  "description": "A set of encryption classes for node + typescript",
   "license": "MIT",
   "author": {
     "name": "Pat Migliaccio",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pmigliaccio/encryptdo.git"
+    "url": "https://github.com/patmigliaccio/type-crypt.git"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

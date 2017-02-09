@@ -9,7 +9,7 @@ export default class Hash {
         this._hash.setEncoding(encoding || 'hex');
     }
 
-    read(filePath : string){
+    read(filePath : string) : Promise<any>{
         let reader = fs.createReadStream(filePath);
         reader.pipe(this._hash);
 
