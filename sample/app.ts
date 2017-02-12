@@ -1,10 +1,13 @@
-import Hash from '../src/hash';
+import Hasher from '../src/Hasher';
 
 const file = 'data/randomStrings.txt';
 
-let slash = new Hash('sha256');
+let slash = new Hasher('sha256');
 
-slash.read(file)
-    .then((res) => {
-        console.log(res);
+slash.readFile(file)
+    .then((response) => {
+        console.log(response);
     });
+
+let output = slash.readString('xyz');
+console.log(output);
